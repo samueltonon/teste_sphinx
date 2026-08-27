@@ -1,0 +1,15 @@
+# Pastas de compilação local e cache do Python
+build/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Arquivos e pastas do VS Code ou sistema operacional
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Ambientes virtuais
+env/
+venv/
+.venv/
