@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="pt-BR" data-content_root="./">
-  <head>
-<meta charset="utf-8">
+  <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Índice" href="genindex.html"><link rel="search" title="Buscar" href="#">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="genindex.html"><link rel="search" title="Buscar" href="search.html"><link rel="next" title="Guia de Configuração do Ambiente Sphinx" href="sphinx_setup.html"><link rel="prev" title="Instalação e Configuração do Git" href="instalacao_git.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-<meta name="robots" content="noindex" />
-<title>Buscar - Documentação teste_sphinx 1.0</title><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+        <title>Publicação no GitHub Pages - Documentação teste_sphinx 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -173,7 +173,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -185,17 +185,17 @@
   
   <span class="sidebar-brand-text">Documentação teste_sphinx 1.0</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Buscar" name="q" aria-label="Buscar">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">TÓPICOS DE CONFIGURAÇÃO:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="boas_vindas.html">Boas-Vindas à Ferramenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instalacao_git.html">Instalação e Configuração do Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="publicacao_github.html">Publicação no GitHub Pages</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Publicação no GitHub Pages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sphinx_setup.html">Guia de Configuração do Ambiente Sphinx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">Setup e Dicas do VS Code</a></li>
 </ul>
@@ -217,7 +217,13 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/publicacao_github.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
@@ -225,30 +231,73 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Erro</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
+          <section id="publicacao-no-github-pages">
+<h1>Publicação no GitHub Pages<a class="headerlink" href="#publicacao-no-github-pages" title="Link para este cabeçalho">¶</a></h1>
+<p>A publicação da documentação gerada pelo Sphinx é feita utilizando o repositório do GitHub e o recurso de hospedagem estática <strong>GitHub Pages</strong>.</p>
+<section id="estruturacao-da-pasta-docs">
+<h2>Estruturação da Pasta docs<a class="headerlink" href="#estruturacao-da-pasta-docs" title="Link para este cabeçalho">¶</a></h2>
+<p>O GitHub Pages pode servir arquivos estáticos diretamente de uma pasta chamada <code class="docutils literal notranslate"><span class="pre">docs</span></code> na raiz do repositório.</p>
+<ol class="arabic simple">
+<li><p>Copie todo o conteúdo gerado dentro de <code class="docutils literal notranslate"><span class="pre">build/html</span></code> para uma pasta chamada <code class="docutils literal notranslate"><span class="pre">docs</span></code> na raiz do projeto.</p></li>
+<li><p>Crie um arquivo em branco chamado <strong>``.nojekyll``</strong> dentro da pasta <code class="docutils literal notranslate"><span class="pre">docs</span></code> para garantir que o suporte a arquivos CSS do Sphinx não seja bloqueado pelo GitHub.</p></li>
+</ol>
+</section>
+<section id="envio-do-codigo-ao-repositorio">
+<h2>Envio do Código ao Repositório<a class="headerlink" href="#envio-do-codigo-ao-repositorio" title="Link para este cabeçalho">¶</a></h2>
+<p>No terminal do VS Code, execute a sequência de comandos para registrar o histórico e enviar a documentação para o GitHub:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">"Atualizacao da documentacao Sphinx"</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="n">-M</span> <span class="n">main</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">SEU_USUARIO</span><span class="p">/</span><span class="n">SEU_REPOSITORIO</span><span class="p">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">-u</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
 </div>
-</noscript>
-
-<div id="search-results"></div>
+</section>
+<section id="ativacao-do-github-pages">
+<h2>Ativação do GitHub Pages<a class="headerlink" href="#ativacao-do-github-pages" title="Link para este cabeçalho">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Acesse o repositório no [GitHub](<a class="reference external" href="https://github.com">https://github.com</a>).</p></li>
+<li><p>Vá na aba <strong>Settings</strong> &gt; <strong>Pages</strong> no menu lateral.</p></li>
+<li><p>Em <strong>Source / Branch</strong>, selecione a branch <strong>main</strong>.</p></li>
+<li><p>No campo do diretório, altere de <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">(root)</span></code> para <strong>``/docs``</strong>.</p></li>
+<li><p>Clique em <strong>Save</strong>.</p></li>
+</ol>
+<p>Após cerca de 2 minutos, o site da documentação estará publicado e acessível publicamente via navegador.</p>
+<a class="reference internal image-reference" href="_images/whiterabbit.png"><img alt="Follow the white rabbit..." class="align-right" src="_images/whiterabbit.png" style="width: 20px;" />
+</a>
+</section>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="sphinx_setup.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Guia de Configuração do Ambiente Sphinx</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="instalacao_git.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Instalação e Configuração do Git</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -267,8 +316,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Publicação no GitHub Pages</a><ul>
+<li><a class="reference internal" href="#estruturacao-da-pasta-docs">Estruturação da Pasta docs</a></li>
+<li><a class="reference internal" href="#envio-do-codigo-ao-repositorio">Envio do Código ao Repositório</a></li>
+<li><a class="reference internal" href="#ativacao-do-github-pages">Ativação do GitHub Pages</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -279,8 +349,5 @@
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/translations.js?v=71a39b36"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+    </body>
 </html>

@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="pt-BR" data-content_root="./">
-  <head>
-<meta charset="utf-8">
+  <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Índice" href="genindex.html"><link rel="search" title="Buscar" href="#">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="genindex.html"><link rel="search" title="Buscar" href="search.html"><link rel="next" title="Publicação no GitHub Pages" href="publicacao_github.html"><link rel="prev" title="Boas-Vindas à Ferramenta" href="boas_vindas.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-<meta name="robots" content="noindex" />
-<title>Buscar - Documentação teste_sphinx 1.0</title><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+        <title>Instalação e Configuração do Git - Documentação teste_sphinx 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -173,7 +173,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -185,16 +185,16 @@
   
   <span class="sidebar-brand-text">Documentação teste_sphinx 1.0</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Buscar" name="q" aria-label="Buscar">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">TÓPICOS DE CONFIGURAÇÃO:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="boas_vindas.html">Boas-Vindas à Ferramenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalacao_git.html">Instalação e Configuração do Git</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Instalação e Configuração do Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="publicacao_github.html">Publicação no GitHub Pages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sphinx_setup.html">Guia de Configuração do Ambiente Sphinx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">Setup e Dicas do VS Code</a></li>
@@ -217,7 +217,13 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/instalacao_git.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
@@ -225,30 +231,73 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Erro</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
+          <section id="instalacao-e-configuracao-do-git">
+<h1>Instalação e Configuração do Git<a class="headerlink" href="#instalacao-e-configuracao-do-git" title="Link para este cabeçalho">¶</a></h1>
+<p>Para versionar a documentação no padrão <strong>Docs as Code</strong> e realizar a publicação automática, é necessário ter o Git instalado no ambiente local.</p>
+<section id="instalacao-rapida-via-terminal-winget">
+<h2>Instalação Rápida via Terminal (winget)<a class="headerlink" href="#instalacao-rapida-via-terminal-winget" title="Link para este cabeçalho">¶</a></h2>
+<p>O Windows possui um gerenciador de pacotes nativo em linha de comando (Windows Package Manager). É a forma mais rápida e padronizada de instalar o Git sem precisar navegar até o navegador.</p>
+<ol class="arabic simple">
+<li><p>Abra o <strong>PowerShell</strong> ou o <strong>Terminal do Windows</strong>.</p></li>
+<li><p>Cole e execute o comando abaixo:</p></li>
+</ol>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Git</span><span class="p">.</span><span class="n">Git</span> <span class="n">-e</span> <span class="p">-</span><span class="n">-source</span> <span class="n">winget</span>
+</pre></div>
 </div>
-</noscript>
-
-<div id="search-results"></div>
+<ol class="arabic simple" start="3">
+<li><p>Aguarde o download e a finalização automática do instalador.</p></li>
+</ol>
+</section>
+<section id="confirmando-a-instalacao">
+<h2>Confirmando a Instalação<a class="headerlink" href="#confirmando-a-instalacao" title="Link para este cabeçalho">¶</a></h2>
+<p>Após o término do processo no terminal, feche e reabra o terminal (ou o VS Code) para atualizar as variáveis de ambiente do sistema e execute:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="p">-</span><span class="n">-version</span>
+</pre></div>
+</div>
+<p>Se o retorno indicar a versão (ex: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">version</span> <span class="pre">2.x.x</span></code>), a ferramenta está pronta para uso.</p>
+</section>
+<section id="configuracao-de-identidade">
+<h2>Configuração de Identidade<a class="headerlink" href="#configuracao-de-identidade" title="Link para este cabeçalho">¶</a></h2>
+<p>Antes de realizar o primeiro commit, registre a sua identidade global no Git rodando os comandos no terminal:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s2">"Seu Nome"</span>
+<span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="n">-global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="s2">"seuemail@exemplo.com"</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/whiterabbit.png"><img alt="Follow the white rabbit..." class="align-right" src="_images/whiterabbit.png" style="width: 20px;" />
+</a>
+</section>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="publicacao_github.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Publicação no GitHub Pages</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="boas_vindas.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Boas-Vindas à Ferramenta</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -267,8 +316,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Instalação e Configuração do Git</a><ul>
+<li><a class="reference internal" href="#instalacao-rapida-via-terminal-winget">Instalação Rápida via Terminal (winget)</a></li>
+<li><a class="reference internal" href="#confirmando-a-instalacao">Confirmando a Instalação</a></li>
+<li><a class="reference internal" href="#configuracao-de-identidade">Configuração de Identidade</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -279,8 +349,5 @@
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/translations.js?v=71a39b36"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+    </body>
 </html>

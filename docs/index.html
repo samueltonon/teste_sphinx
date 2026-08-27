@@ -173,7 +173,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -194,8 +194,10 @@
   <p class="caption" role="heading"><span class="caption-text">TÓPICOS DE CONFIGURAÇÃO:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="boas_vindas.html">Boas-Vindas à Ferramenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vscode.html">Setup e Dicas do VS Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacao_git.html">Instalação e Configuração do Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publicacao_github.html">Publicação no GitHub Pages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sphinx_setup.html">Guia de Configuração do Ambiente Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">Setup e Dicas do VS Code</a></li>
 </ul>
 
 </div>
@@ -229,14 +231,14 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="portal-de-documentacao">
-<h1>Portal de Documentação<a class="headerlink" href="#portal-de-documentacao" title="Link para este cabeçalho">¶</a></h1>
-<p>Selecione um tópico no menu lateral à esquerda para navegar pelos guias do sistema.</p>
+          <section id="documentacao-do-setor-de-ti">
+<h1>Documentação do Setor de TI<a class="headerlink" href="#documentacao-do-setor-de-ti" title="Link para este cabeçalho">¶</a></h1>
+<p>Bem-vindo ao portal centralizado de documentação e manuais do setor.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">TÓPICOS DE CONFIGURAÇÃO:</span></p>
 <ul>
@@ -246,16 +248,36 @@
 <li class="toctree-l2"><a class="reference internal" href="boas_vindas.html#para-que-serve">Para que serve?</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="instalacao_git.html">Instalação e Configuração do Git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="instalacao_git.html#instalacao-rapida-via-terminal-winget">Instalação Rápida via Terminal (winget)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instalacao_git.html#confirmando-a-instalacao">Confirmando a Instalação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instalacao_git.html#configuracao-de-identidade">Configuração de Identidade</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="publicacao_github.html">Publicação no GitHub Pages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="publicacao_github.html#estruturacao-da-pasta-docs">Estruturação da Pasta docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicacao_github.html#envio-do-codigo-ao-repositorio">Envio do Código ao Repositório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicacao_github.html#ativacao-do-github-pages">Ativação do GitHub Pages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx_setup.html">Guia de Configuração do Ambiente Sphinx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">Setup e Dicas do VS Code</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="vscode.html#instalacao-segura">Instalação Segura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vscode.html#extensoes-recomendadas">Extensões Recomendadas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="sphinx_setup.html">Guia de Configuração do Ambiente Sphinx</a></li>
 </ul>
 </div>
+<section id="indices-e-tabelas">
+<h2>Índices e Tabelas<a class="headerlink" href="#indices-e-tabelas" title="Link para este cabeçalho">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice do Módulo</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Página de Busca</span></a></p></li>
+</ul>
 <a class="reference internal image-reference" href="_images/whiterabbit.png"><img alt="Follow the white rabbit..." class="align-right" src="_images/whiterabbit.png" style="width: 20px;" />
 </a>
+</section>
 </section>
 
         </article>
@@ -291,8 +313,27 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Documentação do Setor de TI</a><ul>
+<li><a class="reference internal" href="#indices-e-tabelas">Índices e Tabelas</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
